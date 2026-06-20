@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Pessoal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">Meu Portfólio</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <button id="toggle-theme" class="btn-theme">🌙 Escuro</button>
+    </header>
+
+    <section id="sobre" class="section-content">
+        <h2>Sobre Mim</h2>
+        <div class="card">
+            <p>Olá! Meu nome é Jhonatam jean , tenho 26 anos e sou estudante de Tecnologia da Informação.</p>
+            <p>Gosto de tecnologia, desenvolvimento de sistemas, jogos e resolver problemas práticos no dia a dia. Nas horas vagas, curto praticar esportes e acompanhar cenários competitivos.</p>
+        </div>
+    </section>
+
+    <section id="formacao" class="section-content">
+        <h2>Formação Acadêmica e Idiomas</h2>
+        <div class="card">
+            <h3>Ensino Superior</h3>
+            <p><strong>Curso:</strong> Sistemas de Informação / Análise e Desenvolvimento de Sistemas</p>
+            <p><strong>Instituição:</strong> Uninter - Cursando</p>
+            <hr>
+            <h3>Idiomas & Competências</h3>
+            <ul>
+                <li>Português - Nativo</li>
+    
+                <li>Conhecimentos em Lógica de Programação, Java, SQL e Engenharia de Software.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section-content">
+        <h2>Portfólio de Projetos</h2>
+        <div class="portfolio-grid">
+            <div class="project-card">
+                <h3>Sistema Acadêmico Java</h3>
+                <p>Desenvolvimento de uma aplicação desktop utilizando Orientação a Objetos (POO) para gerenciamento de notas e alunos.</p>
+                <a href="https://github.com/" target="_blank" class="repo-link">Ver Repositório</a>
+            </div>
+            <div class="project-card">
+                <h3>Modelagem de Banco de Dados</h3>
+                <p>Criação de diagramas entidade-relacionamento (DER) e scripts SQL para um sistema de e-commerce.</p>
+                <a href="https://github.com/" target="_blank" class="repo-link">Ver Repositório</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section-content">
+        <h2>Contato</h2>
+        <div class="card">
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="text" id="email" name="email" placeholder="exemplo@dominio.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem aqui..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Enviar Mensagem</button>
+            </form>
+            <div id="form-feedback" class="feedback-message hidden"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Jhonatam jean . Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
